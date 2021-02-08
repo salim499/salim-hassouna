@@ -85,7 +85,7 @@ section .title::after{
     padding: 10px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.1);
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -166,8 +166,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.png") no-repeat center;
-    height: 100vh;
+    background: url("images/12.png") no-repeat center;
+    height: 150vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
@@ -184,6 +184,8 @@ section .title::after{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(8, 4, 245);
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -385,7 +387,7 @@ section .title::after{
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
-    transition: all 0.15s ease;
+    transition: all 0.1s ease;
 }
 .teams .carousel .card:hover{
     background: crimson;
@@ -395,7 +397,7 @@ section .title::after{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.15s ease;
+    transition: all 0.1s ease;
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
@@ -411,7 +413,7 @@ section .title::after{
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
-    transition: all 0.15s ease;
+    transition: all 0.1s ease;
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
@@ -425,7 +427,7 @@ section .title::after{
     width: 50px;
     margin: 0 5px;
     outline: none!important;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     border-radius: 10px;
     background: crimson !important;
 }
@@ -536,13 +538,17 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: rgb(0, 0, 0);
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+
+    bottom: 0px;
+    width: 100%;
+    z-index: 99999;
 }
 footer span a{
-    color: crimson;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 footer span a:hover{
